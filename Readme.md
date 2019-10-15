@@ -1,7 +1,7 @@
 # Личный проект «Шесть городов» [![Build status][travis-image]][travis-url]
 
 * Студент: [Виолетта](https://up.htmlacademy.ru/react/2/user/24321).
-* Наставник: `Неизвестно`.
+* Наставник: `Keks`.
 
 ---
 
