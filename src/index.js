@@ -5,7 +5,7 @@ import App from './app/app.jsx';
 
 const init = () => {
   const settings = {
-    apartmentTitle: cardName
+    apartmentTitle: cardName,
   };
   ReactDOM.render(
       < App title={settings.apartmentTitle}/>,

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Apartment from '../apartment/apartment.jsx';
 
 const App = (props) => {
-  const {title} = props;
+  const {title, onTitleLinkClick} = props;
   return (
     <div className="page page--gray page--main">
       <header className="header">
@@ -89,7 +89,7 @@ const App = (props) => {
               </form>
               <div className="cities__places-list places__list tabs__content">
                 {title.map((card, index) =>
-                  <Apartment cardTitle={card} key={index}/>
+                  <Apartment cardTitle={card} key={index} onClick={onTitleLinkClick}/>
                 )}
               </div>
             </section>
@@ -103,7 +103,8 @@ const App = (props) => {
 };
 
 App.propTypes = {
-  title: PropTypes.array.isRequired
+  title: PropTypes.array.isRequired,
+  onTitleLinkClick: PropTypes.func
 };
 
 export default App;
