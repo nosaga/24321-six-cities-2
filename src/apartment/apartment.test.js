@@ -5,7 +5,7 @@ import Apartment from '../apartment/apartment';
 it(`apartment block renders when app is launched`, () => {
   const tree = renderer
     .create(<Apartment
-      cardTitle={`Wood and stone place`}
+      card={[`Wood and stone place`]}
     />)
     .toJSON();
 

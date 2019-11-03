@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import cardName from './apartment/apartment.mock';
+import offers from './mocks/offers';
 import App from './app/app.jsx';
 
 const init = () => {
   const settings = {
-    apartmentTitle: cardName,
+    card: offers,
   };
+
   ReactDOM.render(
-      < App title={settings.apartmentTitle}/>,
+      < App cards={settings.card}/>,
       document.querySelector(`#root`)
   );
 };
